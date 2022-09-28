@@ -1,0 +1,34 @@
+=======================/*Proyecto Web previo a PPP*/
+
+/*Creacion de Nuevo Poyecto*/
+django-admin startproject ProyectoWeb
+/*Dentro de Proyecto Web*/
+python manage.py startapp ProyectoWebApp
+python manage.py startapp ServiciosApp
+
+/*Complementos*/
+python -m pip install Pillow
+/*Seguido*/
+python manage.py makemigrations
+python manage.py migrate
+
+/*crear SuperUsuario*/
+python manage.py createsuperuser
+steven
+stevengualpa@gmail.com
+12345
+
+/*Se ejecuta*/
+python manage.py runserver
+
+/*Para manejar Aplicaciones crear un archivo urls.py*/
+
+
+/*en settings*/
+agregar a INSTALLED_APPS ProyectoWebApp
+/*en adminpi de ProyectoWebApp*/
+configurar los servicios
+
+/*Cambiar Idioma Panel de Administracion*/
+settings.py
+LANGUAGE_CODE = 'es-us'
