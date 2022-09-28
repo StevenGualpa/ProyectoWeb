@@ -5,6 +5,7 @@ django-admin startproject ProyectoWeb
 /*Dentro de Proyecto Web*/
 python manage.py startapp ProyectoWebApp
 python manage.py startapp ServiciosApp
+python manage.py startapp BlogApp 
 
 /*Complementos*/
 python -m pip install Pillow
@@ -26,6 +27,9 @@ python manage.py runserver
 
 /*en settings*/
 agregar a INSTALLED_APPS ProyectoWebApp
+agregar a INSTALLED_APPS ServiciosApp
+agregar a INSTALLED_APPS BlogApp
+
 /*en adminpi de ProyectoWebApp*/
 configurar los servicios
 
