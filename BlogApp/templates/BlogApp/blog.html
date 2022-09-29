@@ -17,9 +17,7 @@
         </h2> 
 
           <span class="section-heading-lower">Autor: {{servicio.autor}}</span> <br>
-          <span class="section-heading-lower">Categorias: {{servicio.categorias}}</span> <br>
           <span class="section-heading-lower">Ultima Actualizacion: {{servicio.updated}}</span>
-
       </div>
     </div>
   </div>
@@ -27,14 +25,14 @@
 
   {% endfor %}
 <section>
-    <div style="width: 75%; background-color: white; margin: auto; text-align: center;"> Pruebas
+  <div style="width: 75%; background-color: white; margin: auto; text-align: center;"> Pruebas
     Categorias:
     {% for servicio in posts %}
         <!-- {{servicio.categorias.all}}-->
             {% for categoria in servicio.categorias.all %}
-                <a href="{% url 'Categoria' categoria.id %}">
-                    {{categoria.nombre}}  &nbsp;&nbsp;&nbsp;&nbsp;
-                </a> 
+            <a href="{% url 'Categoria' categoria.id %}" class="linkCategorias">
+              {{categoria.nombre}}  &nbsp;&nbsp;&nbsp;&nbsp;
+          </a> 
             {% endfor %}
     {% endfor %}
     </div>

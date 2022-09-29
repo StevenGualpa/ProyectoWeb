@@ -32,10 +32,9 @@
     {% for servicio in posts %}
         <!-- {{servicio.categorias.all}}-->
             {% for categoria in servicio.categorias.all %}
-         
-                    {{categoria.nombre}}  
-
-          
+            <a href="{% url 'Categoria' categoria.id %}" class="linkCategorias">
+              {{categoria.nombre}}  &nbsp;&nbsp;&nbsp;&nbsp;
+          </a> 
             {% endfor %}
     {% endfor %}
     </div>

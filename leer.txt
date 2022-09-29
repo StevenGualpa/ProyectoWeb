@@ -6,6 +6,8 @@ django-admin startproject ProyectoWeb
 python manage.py startapp ProyectoWebApp
 python manage.py startapp ServiciosApp
 python manage.py startapp BlogApp 
+python manage.py startapp ContactoApp
+python manage.py startapp TiendaApp
 
 /*Complementos*/
 python -m pip install Pillow
