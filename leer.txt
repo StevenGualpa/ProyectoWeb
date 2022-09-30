@@ -31,6 +31,8 @@ python manage.py runserver
 agregar a INSTALLED_APPS ProyectoWebApp
 agregar a INSTALLED_APPS ServiciosApp
 agregar a INSTALLED_APPS BlogApp
+agregar a INSTALLED_APPS ContactoApp
+agregar a INSTALLED_APPS TiendaApp
 
 /*en adminpi de ProyectoWebApp*/
 configurar los servicios
@@ -38,3 +40,17 @@ configurar los servicios
 /*Cambiar Idioma Panel de Administracion*/
 settings.py
 LANGUAGE_CODE = 'es-us'
+
+
+/*complementos correos*/
+pip install django-email 
+pip3 install django-smtp-ssl 
+
+
+/*Configuracion en settings*/
+EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST="smtp.gmail.com"
+EMAIL_USE_TLS=True
+EMAIL_PORT=587
+EMAIL_HOST_USER="stevengualpa@gmail.com"
+EMAIL_HOST_PASSWORD="hpekqmradnscbkdx"
